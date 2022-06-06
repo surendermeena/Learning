@@ -1,0 +1,10 @@
+# Remove character from the given String
+#first take an empty string
+
+    ans=""
+    for ele in string:
+    
+    #check if element in string and character are same or not
+        if ele != ch:
+            ans+=ele
+    return ans
