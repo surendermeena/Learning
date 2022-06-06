@@ -6,5 +6,7 @@
     
     #check if element in string and character are same or not
         if ele != ch:
+        
+        #append string with element which are not equal to given character
             ans+=ele
     return ans
