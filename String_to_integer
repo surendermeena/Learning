@@ -1,0 +1,14 @@
+## Read input as specified in the question.
+## Print output as specified in the question.
+
+def StringtoInteger(s):
+    if s == '':
+        return 0
+    small = StringtoInteger(s[:-1])
+    output = small * 10 + int(s[-1])
+    return output
+
+s = input()
+print_string = StringtoInteger(s)
+print(print_string)
+
