@@ -1,0 +1,19 @@
+## Read input as specified in the question.
+## Print output as specified in the question.
+def pairStar(s):
+    l = len(s)
+    if l == 1:
+        return s
+    small_out = pairStar(s[1:])
+    if s[0] == s[1]:
+        return s[0] + '*' + small_out
+    else:
+        return s[0] + small_out
+        
+    
+    
+    
+
+s = input()
+output = pairStar(s)
+print(output)
